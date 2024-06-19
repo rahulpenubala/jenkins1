@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    environment {
+        NAME = "rpenubala"
+    }
+    stages {
+        stage('Hello') {
+            steps {
+                echo $NAME
+            }
+        }
+    }
+}
